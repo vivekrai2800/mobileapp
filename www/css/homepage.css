@@ -1,0 +1,140 @@
+.hp-main-header {
+    background: #000;
+    width: 100%;
+    padding: 2px 0 3px 0;
+    
+}
+
+body {
+    background: url('../images/homepage/homepage.png');
+    background-size: cover;
+}
+
+
+.hp-main-tapneat {
+    text-align: center;
+}
+
+.btn-check-in,.btn-qr-code {
+    width: 100%;
+    height: 100%;
+}
+
+.hp-main-check-in {
+    position:relative;left:-50%;
+    
+}
+
+.hp-main-qr-code {    
+   position:relative;left:-50%;
+}
+
+.hp-main-nav {
+      margin: -27px 7px 0 0;
+}
+
+.hp-check-in-desc-checkin {
+    font: bold 0.879em HelveticalNeue, Arial;
+    text-align: center;
+    margin: 0 -120px;
+}
+
+.hp-check-in-desc-qr {
+    font: bold 0.879em HelveticalNeue, Arial;
+    text-align: center;
+    margin: 0 -90px;
+}
+
+
+.check{position:absolute;left:50%;top:18%;}
+.check2{position:absolute;left:50%;top:80%;}
+
+
+.numberCircle {
+    background: url('../images/homepage/hp-btn-bg.png') no-repeat;
+    background-size: cover;
+    width: 102px;
+    height: 102px;  
+	
+}
+
+.hp-check-in-text {
+    font: bold 1.2em HelveticalNeue, Arial;
+    margin-top: 10px;
+}
+
+.hp-check-in-desc-checkin {
+    font: bold 0.879em HelveticalNeue, Arial;
+    text-align: center;        
+}
+
+.hp-check-in-desc-qr {
+    font: bold 0.879em HelveticalNeue, Arial;
+    text-align: center;
+    
+}
+
+.hp-main-check .icon {
+    margin-top: 15%;
+}
+
+.hp-main-left .icon-left {
+    position: absolute;
+    top: 8px;
+    left: 7px;
+}
+
+.right {
+    padding-left: 30px;
+}
+
+/* Alerts */
+.attending.hide{display:none;}
+.attending {position:absolute;width:100%;height:110%;top:0;background:rgba(0, 0, 0, 0.6);}
+.attending .content{background:#000;border-radius:10px;text-align:center;width:80%;margin:0 auto;padding:10px 0px 1px 0px;color:#fff;position:absolute;left:7%;top:35%;}
+.attending .content div{padding-bottom:5px;color:#fff;}
+.attending .content div p{color:#fff;}
+.attending .content .title span{vertical-align:-3px;}
+.attending .content .msg{padding:0px 5px 10px 5px;}
+.attending .content .ok{padding-top:6px;border-top:1px solid #555;}
+.attending .content .ok button{width:30%;margin:0 auto;padding:2px;background:#f4b11b;}
+/* /Alerts */
+
+/*  */
+.animated {
+  -webkit-animation-duration: 0.5s;
+  animation-duration: 0.5s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+
+@-webkit-keyframes zoomIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale3d(.3, .3, .3);
+    transform: scale3d(.3, .3, .3);
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes zoomIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale3d(.3, .3, .3);
+    -ms-transform: scale3d(.3, .3, .3);
+    transform: scale3d(.3, .3, .3);
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+.zoomIn {
+  -webkit-animation-name: zoomIn;
+  animation-name: zoomIn;
+}

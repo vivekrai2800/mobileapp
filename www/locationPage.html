@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <meta charset="utf-8">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>Tap &amp; Eat</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- start of css files declarations -->
+        <link rel="stylesheet" type="text/css" href="css/common.css">
+        <link rel="stylesheet" type="text/css" href="css/menu.css">
+        <link rel="stylesheet" type="text/css" href="css/revieworder.css">
+        <link rel="stylesheet" type="text/css" href="css/locationPage.css">
+<!-- start of css files declarations -->
+
+</head>
+    	<!--[if lt IE 9]>
+			<script src="js/html5.js"></script>
+			<script src="js/css3-mediaqueries.js"></script>
+		<![endif]-->
+<body class="lp-body">
+<!-- start of header section -->
+<header class="ro-header">
+    <section class="header-data">
+        <section class="header-section">
+                <div class="mp-header-left left" id="backButton">
+                    <em class="icon icon-left" id="btn-go-back-location"></em>
+                </div>
+
+                <div class="mp-main-center">
+                    <div class="menuCenter">
+                        <span class="mp-main-menu">Check-In</span>
+                    </div>
+                </div>
+
+                <div class="right">
+                    <em class="icon icon-nav navigate" id="btn-nav-bar"></em>
+                </div>
+        </section>
+    </section>
+    
+        <!-- navigation bar - would be later moved to a different file -->
+        <div role="navigation" id="sidebar"  class="sidebar-offcanvas hide" data-component="sidenav">
+                <!-- list for the first level -->
+                <ul class="list-group te-left-nav" id="te-left-nav" >
+            <li id="Homepage">
+                <div id="homelink" class="nb">
+					<em class="icon icon-nav-home"></em>
+					<a class="list-group-item active" href="#">Home</a>
+                </div>             
+            </li> 
+                   
+            <li id="myOrderpage">
+				<div class="nb" id="orderlink">
+					<div class="icon-panel"><em class="icon icon-nav-order"></em></div>
+					<div><a class="list-group-item" href="#">My Order</a></div>
+				</div>
+            </li>
+            <li id="Accountpage">
+				<div class="nb" id="accountlink">
+					<div class="icon-panel"><em class="icon icon-nav-account"></em></div>
+					<div><a class="list-group-item" href="#">Account</a></div>
+				</div>	
+            </li>
+            <li id="Invitepage">
+                <div id ="invitelink" class="nb">
+					<div class="icon-panel"><em class="icon icon-nav-invite"></em></div>
+					<div><a class="list-group-item" href="#">Invite</a></div>
+                </div>
+            </li>
+            <li id="Settingspage">
+                <div  id="settingslink" class="nb">
+					<div class="icon-panel"><em class="icon icon-nav-settings"></em></div>
+					<div><a class="list-group-item" href="#">Settings</a></div>
+                </div>
+            </li>
+            <li>
+				<div class="nb">
+					<div class="icon-panel"><em class="icon icon-nav-signout"></em></div>
+					<div><a class="list-group-item" href="#">SignOut</a></div>
+				</div>	
+            </li>
+                </ul>
+        </div>
+        <!-- end of navigation bar -->
+</header>
+<!-- end of header section -->
+
+<!-- start of main section -->
+<main>
+		 <div id="map-canvas"
+    		style="display:block;
+            overflow:hidden;
+            position:relative;
+            border:1px solid #aaaaaa;
+            width: 100%;
+            height: 200px;">
+		</div>
+		<div id="map-panel" style="width:100%; height:90%; position:relative; "></div>
+          <!-- start of menu items -->
+          <ul class="main-content-location-list" id='main-content-location-list'>
+               <!--  <div class="main-content-loader">
+                    <img src="images/spinner.gif"/>
+                </div>    -->
+          </ul> 
+          <!-- end of menu items -->
+</main>
+<!-- end of main section -->
+
+<!-- start of footer section -->
+<footer class="menu-footer ro-footer">
+    <section class="footer-data">
+        <ul class="footer-items-list">
+            <li class="footer-item">
+                <em class="icon icon-green"></em>
+                <span>TAKE AWAY</span>
+            </li>
+
+            <li class="footer-item">
+                 <em class="icon icon-yellow"></em>
+                <span>IN VENUE</span>
+            </li>
+        </ul>
+    </section>
+</footer>
+<!-- end of footer section -->
+
+<!-- start of script declarations -->
+
+        <script src="js/jquery-1.11.0.min.js"></script>  
+        <script src="js/jquery.touchswipe.js"></script>		
+        <script src="js/corefunctions.js"></script>		
+		<script src="js/navigation.js"></script>
+		<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDae_f5Wi0prHCLvLb25ZO1dNft4fc62rM"> </script>
+        <script src="js/locationPage.js"></script>
+<!-- end of script declarations -->
+</body>
+</html>
+

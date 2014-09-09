@@ -1,0 +1,329 @@
+/* -----------------------------------start of reset.css--------------------------------------------- */
+html {margin:0;padding:0;border:0;}
+body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, code, del, dfn, em, img, q, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, dialog, figure, footer, header, hgroup, nav, section {margin:0;padding:0;border:0;font-weight:inherit;font-style:inherit;vertical-align:baseline;}
+article, aside, dialog, figure,main, footer, header, hgroup, nav, section {display:block;}
+body {background:white;font-size:16px;font-family:Arial, sans-serif;}
+table {border-collapse:separate;border-spacing:0;}
+caption, th, td {text-align:left;font-weight:normal;float:none !important;}
+table, th, td {vertical-align:middle;}
+blockquote:before, blockquote:after, q:before, q:after {content:'';}
+blockquote, q {quotes:"" "";}
+a img {border:none;}
+a {
+  background: transparent;
+  cursor: pointer;
+  outline: 0;
+}
+
+input[type="text"]:focus,input[type="number"]:focus, input[type="password"],
+textarea:focus, select:focus {
+  font-size: 16px;
+}
+
+a:focus {
+  outline: thin dotted;
+}
+/* line 111, ../../../sass/bootstrap/_normalize.scss */
+a:active,
+a:hover {
+  outline: 0;
+}
+/* -----------------------------------end of reset.css--------------------------------------------- */
+/*:focus {outline:0;}*/
+
+/* -----------------------------------start of typography.css-------------------------------------- */
+html {}
+body {color:#222;background:#fff;}
+h1, h2, h3, h4, h5, h6 {font-weight:normal;color:#111;}
+h1 {font-family: museo-500;font-size:1.375em;margin-bottom:0.5em;color:#95250b;}
+h2 {font-family: museo-500-bold;font-size:1.063em;margin-bottom:0.75em;}
+h3 {font-family: museo-700;font-size:0.750em;margin-bottom:1em;}
+h4 {font-size:1.2em;line-height:1.25;margin-bottom:1.25em;}
+h5 {font-size:1em;font-weight:bold;margin-bottom:1.5em;}
+h6 {font-size:1em;font-weight:bold;}
+h1 img, h2 img, h3 img, h4 img, h5 img, h6 img {margin:0;}
+p {font-family:helvetica;font-size:0.750em;margin:0 0 1.5em;color:#5b5b5b;}
+.left {float:left !important;}
+p .left {margin:1.5em 1.5em 1.5em 0;padding:0;}
+.right {float:right !important;}
+p .right {margin:1.5em 0 1.5em 1.5em;padding:0;}
+a:focus, a:hover {color:#495862;}
+a {font-family: museo-500;color:#30414a;text-decoration:none;font-size: 0.750em;}
+blockquote {margin:1.5em;color:#666;font-style:italic;}
+strong, dfn {font-weight:bold;}
+em, dfn {font-style:italic;}
+sup, sub {line-height:0;}
+abbr, acronym {border-bottom:1px dotted #666;}
+address {margin:0 0 1.5em;font-style:italic;}
+del {color:#666;}
+pre {margin:1.5em 0;white-space:pre;}
+pre, code, tt {font:1em 'andale mono', 'lucida console', monospace;line-height:1.5;}
+li ul, li ol {margin:0;}
+ul, ol {margin:0px;padding:0;}
+ul {list-style-type:none;}
+ol {list-style-type:decimal;}
+dl {margin:0 0 1.5em 0;}
+dl dt {font-weight:bold;}
+dd {margin-left:1.5em;}
+.center{text-align: center;}
+.first {margin-left:0;padding-left:0;}
+.last {margin-right:0;padding-right:0;}
+.top {margin-top:0;padding-top:0;}
+.bottom {margin-bottom:0;padding-bottom:0;}
+
+.filter-active{}
+.filter-heading{}
+.filter-select{}
+
+/* Prevent font scaling in landscape while allowing user zoom */
+html {
+    -webkit-text-size-adjust: 100%; 
+}
+
+/*prevent selection of containers*/
+body {
+  -webkit-user-select: none;
+     -moz-user-select: -moz-none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+/*disable selection of input controls*/
+input:focus,
+select:focus,
+textarea:focus,
+button:focus,
+span:focus {
+    outline: none;
+}
+
+input:focus
+{
+border-color: rgb(245,177,14);
+
+  outline: 0;
+  -webkit-box-shadow: inset 0 1px 1px rgb(245,177,14,.075), 0 0 8px rgb(245, 177, 14, 0.6);
+  box-shadow: inset 0 1px 1px rgb(245,177,14,.075), 0 0 8px rgb(245, 177, 14, 0.6);
+}
+
+/* -----------------------------------end of typography.css------------------------------------------ */
+
+/*start of footer*/
+footer{bottom: 0;position: absolute;width: 100%;}
+/*end of footer*/
+/* ---------------------------------------start of buttons--------------------------------------------- */
+.btn,button {
+  display: inline-block;
+  margin-bottom: 0;
+  font-weight: normal;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  padding: 6px 0px;
+  font-size: 14px;
+  line-height: 1.428571429;
+  width: 100%;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+.btn-black{background: #181818;color:#fff;font:bold 1em helvetica;}
+.btn-golden{
+background: -webkit-linear-gradient(#f3cc6d, #f1b117); /* For Safari 5.1 to 6.0 */
+background: -o-linear-gradient(#f3cc6d, #f1b117); /* For Opera 11.1 to 12.0 */
+background: -moz-linear-gradient(#f3cc6d, #f1b117); /* For Firefox 3.6 to 15 */
+background: linear-gradient(#f3cc6d, #f1b117); /* Standard syntax (must be last) */
+}
+.btn-red{
+background: -webkit-linear-gradient(#e1777a, #e32226); /* For Safari 5.1 to 6.0 */
+background: -o-linear-gradient(#e1777a, #e32226); /* For Opera 11.1 to 12.0 */
+background: -moz-linear-gradient(#e1777a, #e32226); /* For Firefox 3.6 to 15 */
+background: linear-gradient(#e1777a, #e32226); /* Standard syntax (must be last) */
+}
+.btn-green{
+background: -webkit-linear-gradient(#89c073, #45ab1d); /* For Safari 5.1 to 6.0 */
+background: -o-linear-gradient(#89c073, #45ab1d); /* For Opera 11.1 to 12.0 */
+background: -moz-linear-gradient(#89c073, #45ab1d); /* For Firefox 3.6 to 15 */
+background: linear-gradient(#89c073, #45ab1d); /* Standard syntax (must be last) */
+}
+/* ---------------------------------------end of buttons--------------------------------------------- */
+
+/* ---------------------------------------start of icons---------------------------------------------- */
+.icon{background: url('../images/tap-sprites.png') no-repeat;display: inline-block;position: relative;vertical-align: middle;cursor: pointer;}
+.icon-fb{background-position: -19px 0px;width: 15px;height: 23px;}
+.icon-gp{background-position: -3px 0px;width: 15px;height: 23px;}
+.icon-em{background-position: -41px 0px;width: 15px;height: 23px;}
+.icon-right{background-position: -355px -65px;width: 21px;height: 28px;}
+.icon-tapeat{background-position:-22px -21px;width: 27px;height: 28px;z-index:100;}
+.icon-tapandeat{background-position:-22px -21px;width: 27px;height: 28px;}
+.icon-plate{background-position: -48px -26px;width: 50px;height: 25px;padding-right:5px;}
+.icon-nav{background-position: -61px -1px;width: 22px;height: 25px;z-index: 100;}
+.icon-starter{background-position: -126px -59px;width: 39px;height: 37px;}
+.icon-mainmenu{background-position: -87px -59px;width:42px;height: 37px;}
+.icon-desserts{background-position: -55px -59px;width: 34px;height: 37px;}
+.icon-drinks{background-position: -25px -59px;width: 32px;height: 37px;}
+.icon-others{background-position: 4px -59px;width: 33px;height: 37px;}
+.icon-minus{background-position: -138px -19px;width: 35px;height: 35px;}
+.icon-plus{background-position: -99px -19px;width: 35px;height: 35px;}
+.icon-left{background-position: -1px -19px;width: 21px;height: 28px;}
+.icon-ask-waiter{background-position: -165px -59px;width: 33px;height: 37px;}
+.icon-review-order{background-position: -198px -59px;width: 33px;height: 37px;}
+/*.icon-right{background-position: -174px -19px;width: 18px;height: 35px;}*/
+.icon-check-in{background-position: -2px -98px;width: 67px;height: 60px;}
+.icon-qr-code{background-position: -71px -98px;width: 48px;height: 62px;padding-right:10px;}
+.icon-tapneat2{background-position: -233px -59px;width: 118px;height: 37px;}
+.icon-card{background-position: -197px -19px;width: 36px;height: 35px;}
+.icon-down{background-position: -197px -19px;width: 36px;height: 35px;}
+.icon-up{background-position: -197px -19px;width: 36px;height: 35px;}
+.icon-fbb{background-position: 4px -205px ;width: 50px;height:50px; }
+.icon-twb{background-position: -46px -205px; width:50px;height: 50px; }
+.icon-gpb{background-position: -95px -205px;width: 45px;height: 50px;}
+.icon-emb{background-position: -184px -205px;width: 50px;height: 50px;}
+.icon-insb{background-position: -142px -205px;width: 45px;height: 50px;}
+/*.icon-circle{background-position:2px -330px;width:125px;height:120px;z-index:150;border-radius:65px;}*/
+.icon-circle{background-position:-133px -341px;width:100px;height:100px;border-radius:50px;}
+.icon-visa{background-position: -245px -205px; width: 40px;height:40px; }
+.icon-master{background-position:-300px -205px; width: 45px;height:40px; }
+.icon-tap{background-position:-464px -267px;width:35px;height:35px;}
+.icon-rate{background-position:-505px -267px;width:40px;height:40px;}
+.icon-care{background-position:-550px -267px;width:42px;height:40px;}
+.icon-terms{background-position:-605px -267px;width:30px;height:38px;}
+.icon-faq{background-position:-641px -267px;width:40px;height:40px;}
+.icon-feed{background-position:-684px -267px;width:40px;height:40px;}
+.icon-about{background-position:-730px -267px;width:40px;height:40px;}
+.icon-policy{background-position:-772px -267px;width:40px;height:40px;}
+.icon-yellow-circle{background-position: -605px -24px;width: 30px;height: 30px;margin:-5px -5px;}
+.icon-details{background-position:-251px -108px;height:20px;width:25px;}
+.icon-details-down{background-position:-290px -104px;height:25px;width:30px;}
+.icon-order-details{background-position:-315px -104px;height:20px;width:20px;z-index:200;}
+/*navigation based icons */
+
+.icon-nav-home{background-position: -412px -19px;width: 33px;height: 37px;}
+.icon-nav-order{background-position: -442px -19px;width: 30px;height: 30px;}
+.icon-nav-account{background-position: -526px -19px;width: 30px;height: 30px;}
+.icon-nav-invite{background-position: -470px -19px;width: 30px;height: 30px;}
+.icon-nav-settings{background-position: -500px -19px;width: 30px;height: 30px;}
+.icon-nav-signout{background-position: -555px -19px;width: 30px;height: 30px;}
+.icon-green{background-position: -148px -107px;height: 20px;width: 18px;}
+.icon-yellow{background-position: -169px -107px;height: 20px;width: 18px;}
+.icon-grey-star{background-position: -212px  -108px;height: 15px;width: 12px;}
+.icon-yellow-star{background-position: -195px -108px;height: 15px;width: 12px;}
+.icon-location-pin{background-position: -130px -108px;height: 15px;width: 12px;}
+.icon-rupee{background-position: -224px  -108px;height: 20px;width: 20px;}
+
+.icon-greenT{background-position: -341px -104px;width: 20px;height: 20px;}
+.icon-redD{background-position: -363px -104px;width: 20px;height: 20px;}
+.icon-yellowV{background-position: -385px -104px;width: 20px;height: 20px;}
+.icon-mapmark{background-position: -411px -105px;width: 9px;height: 20px;}
+.icon-starempty{background-position: -424px -105px;width: 13px;height: 15px;}
+.icon-star{background-position: -439px -104px;width: 13px;height: 15px;}
+.icon-phone{background-position: -378px -196px;width: 55px;height: 55px;}
+.icon-veg{background-position: -503px -200px;width: 55px;height: 50px;}
+.icon-nonveg{background-position: -442px -200px;width: 55px;height: 50px;}
+.icon-direction{background-position: -834px -269px;width: 30px;height: 30px;}
+.icon-fav{background-position: -872px -269px;width: 30px;height: 30px;}
+.icon-muff{background-position: -926px -269px;width: 30px;height: 30px;}
+/* ---------------------------------------end of icons---------------------------------------------- */
+.mb{width:89.375%;margin:0 auto;}
+/* ---------------------------------start of radio and checkbox styling----------------------------- */
+ 
+/* base styles */
+input[type="radio"], 
+input[type="checkbox"] {
+    height: 1.2em;
+    width: 1.2em;
+    vertical-align: middle;
+    margin: 0 0.4em 0.4em 0;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    background: -webkit-radial-gradient(#fff, #d4d4d4); /* Safari 5.1 to 6.0 */
+    background: -o-radial-gradient(#fff, #d4d4d4); /* For Opera 11.6 to 12.0 */
+    background: -moz-radial-gradient(#fff, #d4d4d4); /* For Firefox 3.6 to 15 */
+    background: radial-gradient(#fff , #d4d4d4); /* Standard syntax (must be last) */
+    -webkit-appearance: none;
+    -webkit-transition: box-shadow 200ms;
+     box-shadow:inset 1px 1px 0 #fff, 0 1px 1px rgba(0,0,0,0.1);
+}
+/* border radius for radio*/
+input[type="radio"] {
+    -webkit-border-radius:100%;
+    border-radius:100%;
+}
+ 
+/* border radius for checkbox */
+input[type="checkbox"] {
+    -webkit-border-radius:2px;
+    border-radius:2px;
+}
+ 
+/* hover state */
+input[type="radio"]:not(:disabled):hover,
+input[type="checkbox"]:not(:disabled):hover {
+    border-color:rgba(0,0,0,0.5);
+    box-shadow:inset 1px 1px 0 #fff, 0 0 4px rgba(0,0,0,0.3);
+}
+ 
+/* active state */
+input[type="radio"]:active:not(:disabled),
+input[type="checkbox"]:active:not(:disabled) {
+    background-image: -webkit-linear-gradient(#C2C2C2, #EFEFEF);
+    box-shadow:inset 1px 1px 0 rgba(0,0,0,0.2), inset -1px -1px 0 rgba(255,255,255,0.6);
+    border-color:rgba(0,0,0,0.5);
+}
+ 
+/* focus state */
+input[type="radio"]:focus,
+input[type="checkbox"]:focus {
+    outline:none;
+    box-shadow: 0 0 1px 2px rgba(0, 240, 255, 0.4);
+}
+ 
+/* input checked border color */
+input[type="radio"]:checked,
+input[type="checkbox"]:checked {
+    border-color:rgba(0, 0, 0, 0.5)
+}
+ 
+/* radio checked */
+input[type="radio"]:checked:before {
+display: block;
+height: 0.3em;
+width: 0.3em;
+position: relative;
+left: 0.4em;
+top: 0.4em;
+background: rgba(0, 0, 0, 0.7);
+border-radius: 100%;
+content: '';
+}
+ 
+/* checkbox checked */
+input[type="checkbox"]:checked:before {
+font-weight: bold;
+color: green;
+content: '\2713';
+-webkit-margin-start: 0;
+margin-left: 2px;
+font-size: 0.9em;
+}
+ 
+/* disabled input */
+input:disabled {
+opacity: .6;
+box-shadow: none;
+background: rgba(0, 0, 0, 0.1);
+box-shadow:none;
+}
+ 
+/* style label for disabled input */
+input:disabled + label {
+opacity: .6;
+cursor:default;
+-webkit-user-select: none;
+}
+/* ---------------------------------end of radio and checkbox styling----------------------------- */

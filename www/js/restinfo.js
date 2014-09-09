@@ -1,0 +1,1 @@
+$('.checkin-rest').on('touchend',function(){window.location.href="menupage.html";});

@@ -1,0 +1,51 @@
+.mp-header .right{position:absolute;right:1px;top:5px;}
+
+.pm-main .mb{
+	width: 89%;
+}
+
+.icon-card{
+	float: left;
+	margin-left: 20px;
+}
+
+.icon-visa{
+	margin-left:10px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+
+}
+.icon-master{
+	margin-left:15px;
+	margin-bottom:5px;
+	margin-top: 5px;
+}
+
+.pm-main .btn-golden{
+	margin: 8px 0 8px 0;
+	font:1.042em HelveticaNeue,Arial;
+}
+
+.btn-golden-text{margin-top: 11px;margin-right: 46px;}
+h4{font:1.042em HelveticaNeue,Arial;}
+.btn-pay-by-credit{display: inline-block;}
+.input-pay{
+	width: 100%;
+	margin-bottom: 6px;
+}
+.input-valid-thru{float: left;width:65.1006%; margin-right: 3.0538%; }
+.input-cvv{width: 100%;}
+.pm-option-checkboxes{font:1.042em HelveticaNeue,Arial;}
+.pm-main-seperator{border:1px solid #d1d1d1;display:block;position:relative;}
+.pm-main input[type="checkbox"]{margin: 0;}
+.pm-option-checkboxes div{margin-top: 6px;margin-bottom: 6px;}
+.pm-payment-buttons .btn-red,.pm-payment-buttons .btn-green{width: 49%;color:#fff;}
+.pay-chk{margin:5px;}
+/*.pm-select{width: 100%;height:28px;margin-bottom: 6px;}
+.pm-select-mon,.pm-select-yr{width: 49%;height:28px;margin-bottom: 6px;}
+*/
+.cvvdate{width: 100%; display: inline-block; border: 1px solid;}
+.input-month{width: 30%; border: 0;}
+.input-year{width:30%; border: 0; }
+.input-cvv{width: 30%; border: 0;}
+.frmAddressDetails input, .frmAddressDetails label{width:49%;}

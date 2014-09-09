@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Tap &amp; Eat</title>
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- start of css files declarations -->
+<link rel="stylesheet" type="text/css" href="css/common.css">
+<link rel="stylesheet" type="text/css" href="css/menu.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<!-- start of css files declarations -->
+
+<!-- start of js file declarations -->
+<script type="text/javascript" src="cordova.js"></script>
+<script type="text/javascript" src="barcodescanner.js"></script>
+<script type="text/javascript" src="cdv-plugin-fb-connect.js"></script>
+<script type="text/javascript" src="facebook-js-sdk.js"></script>
+<!-- end of js file declarations -->
+
+</head>
+<!--[if lt IE 9]>
+            <script src="js/html5.js"></script>
+            <script src="js/css3-mediaqueries.js"></script>
+        <![endif]-->
+<body>
+    <!-- start of header section -->
+    <header class="mp-header">
+        <section class="header-data">
+            <section class="header-section">
+                <div class="mp-header-left left" id="backButton">
+                    <em class="icon icon-left" id="btn-go-back"></em>
+                </div>
+
+                <div class="mp-main-center">
+                    <div class="menuCenter">
+                        <em class="icon icon-tapeat"></em> <span class="mp-main-menu">Menu</span>
+                    </div>
+                </div>
+
+                <div class="right">
+                    <em class="icon icon-plate cart"><span class="icon-plate-text"></span></em>
+                    <em class="icon icon-nav navigate" id="btn-nav-bar"></em>
+                </div>
+            </section>
+        </section>
+
+
+        <!-- navigation bar - would be later moved to a different file -->
+        <div role="navigation" id="sidebar" class="sidebar-offcanvas hide"
+            data-component="sidenav">
+            <!-- list for the first level -->
+            <ul class="list-group te-left-nav" id="te-left-nav">
+                <!-- <li class="te-left-nav-icon">
+                <em class="icon icon-tapneat2"></em>
+            </li> -->
+                <li id="Homepage">
+                    <div id="homelink" class="nb">
+                        <em class="icon icon-nav-home"></em> <a
+                            class="list-group-item" href="#">Home</a>
+                    </div>
+                </li>
+                <li id="myOrderpage">
+					<div class="nb">
+						<div class="icon-panel">
+							<em class="icon icon-nav-order"></em>
+						</div>
+						<div>
+							<a class="list-group-item" href="#">My Order</a>
+						</div>
+					</div>
+                </li>
+                <li id="Accountpage">
+					<div class="nb" id="accountlink">
+						<div class="icon-panel">
+							<em class="icon icon-nav-account"></em>
+						</div>
+						<div>
+							<a class="list-group-item" href="#">Account</a>
+						</div>
+					</div>
+                </li>
+                <li id="Invitepage">
+                    <div id="invitelink" class="nb">
+                        <div class="icon-panel">
+                            <em class="icon icon-nav-invite"></em>
+                        </div>
+                        <div>
+                            <a class="list-group-item" href="#">Invite</a>
+                        </div>
+                    </div>
+                </li>
+                <li id="Settingspage">
+                    <div id="settingslink" class="nb">
+                        <div class="icon-panel">
+                            <em class="icon icon-nav-settings"></em>
+                        </div>
+                        <div>
+                            <a class="list-group-item" href="#">Settings</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+					<div class="nb">
+						<div class="icon-panel">
+							<em class="icon icon-nav-signout"></em>
+						</div>
+						<div>
+							<a class="list-group-item" href="#">SignOut</a>
+						</div>
+					</div>
+                </li>
+            </ul>
+        </div>
+
+        <!-- end of navigation bar -->
+    </header>
+    <!-- end of header section -->
+
+    <!-- start of main content for the menupage -->
+    <main class="mp-main">
+    <section class="main-data">
+        <section class="main-content">
+            <section class="mb rest-det">
+                <div class="left main-content-data">
+                    <img class="rest-logo" src="images/menu/sample-rest-logo.png" />
+                </div>
+
+                <!-- start of restaurant details -->
+                <div class="main-content-details">
+                    <p class="name">WOH Restaurant </p>
+                    <p class="type"><span>Bar</span>, <span>New Delhi</span></p>
+                </div>
+                <!-- end of restaurant details -->
+            </section><br/>
+		
+            <div class="categories">
+            <!-- start of menu items -->
+			<div class="category-list">
+			 <div class="more-category-left left-cat">
+                    <em class="icon icon-left"></em>
+                </div> 
+            <ul class="main-content-menu" id="main-cat-content">
+								
+                <li class="btn starter first-border selected"><em class="icon icon-starter"></em>
+                    <div class="main-con-menu-text">STARTER</div></li>
+
+                <li class="btn bread"><em class="icon icon-mainmenu"></em>
+                    <div class="main-con-menu-text">BREAD</div></li>
+
+                <li class="btn dessert"><em class="icon icon-desserts"></em>
+                    <div class="main-con-menu-text">DESSERT</div></li>
+
+                <li class="btn drinks"><em class="icon icon-drinks"></em>
+                    <div class="main-con-menu-text">DRINKS</div></li>
+
+                <li class="btn others"><em class="icon icon-others"></em>
+                    <div class="main-con-menu-text">OTHERS</div></li>
+				
+				<li class="btn others"><em class="icon icon-others"></em>
+                    <div class="main-con-menu-text">MAIN</div></li>
+				
+				<li class="btn others"><em class="icon icon-others"></em>
+                    <div class="main-con-menu-text">SNACKS</div></li>	
+				
+				<li class="btn others"><em class="icon icon-others"></em>
+                    <div class="main-con-menu-text">PASTA</div></li>
+					
+					
+														
+            </ul>
+			<div class="more-category-right right-cat">
+					<em class="icon icon-right"></em>
+				</div>	
+			</div>
+            <!-- end of menu items -->
+            </div>
+
+            <ul class="main-content-dish-list" id='main-content-dish-list'>
+                <div class="main-content-loader">
+                    <img src="images/spinner.gif" />
+                </div>									
+            </ul>
+        </section>
+    </section>
+    </main>
+    
+    <div class="attending hide">
+	  <div class="content">
+	    <div class="title"><em class="icon icon-tapandeat"></em><span>Sending a waiter</span></div>
+	    <div class="msg"><p>A waiter will attend to you shortly. I'm sorry to keep you waiting.</p></div>
+	    <div class="ok"><button>OK</button></div>
+	  </div>
+    </div>
+
+    <footer class="menu-footer">
+        <section class="footer-data">
+            <ul class="footer-items-list">
+                <li class="btn footer-item" id="btnAskWaiter"><em
+                    class="icon icon-ask-waiter"></em> <span>ask for waiter</span></li>
+
+                <li class="btn footer-item to-review" id="btnReviewOrder"><em
+                    class="icon icon-review-order"></em> <span>review order</span></li>
+            </ul>
+        </section>
+    </footer>
+    <!-- end of main content for the menupage -->
+
+    <!-- start of script declarations -->
+    <script src="js/jquery-1.11.0.min.js"></script>
+    <script src="js/jquery.touchswipe.js"></script>
+    <script src="js/corefunctions.js"></script>
+	<script src="js/navigation.js"></script>
+	<script src="js/menu.js"></script>
+	
+    <!-- end of script declarations -->
+</body>
+</html>

@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <meta charset="utf-8">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>Tap &amp; Eat</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1,minimum-scale=1, maximum-scale=1,user-scalable=0">
+
+<!-- start of css files declarations -->
+        <link rel="stylesheet" type="text/css" href="css/common.css">
+        <link rel="stylesheet" type="text/css" href="css/menu.css">
+        <link rel="stylesheet" type="text/css" href="css/privacy.css">
+<!-- start of css files declarations -->
+
+<!-- start of js file declarations -->
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="barcodescanner.js"></script>
+<!-- end of js file declarations -->
+
+</head>
+
+<body>
+
+<!-- start of header section -->
+<header class="mp-header">
+    <section class="header-data">
+        <section class="header-section">
+               
+                <div class="mp-header-left left" id="backButton">
+                    <em class="icon icon-left" id="btn-go-back"></em>
+                </div>
+
+                <div class="mp-main-center">
+                    <div class="menuCenter">
+                         <span class="mp-main-menu">Privacy Policy</span>
+                    </div>
+                </div>
+
+                <div class="right">
+                   <em class="icon icon-nav navigate" id="btn-nav-bar"></em>
+                </div>
+        </section>
+    </section>
+     <!-- navigation bar - would be later moved to a different file -->
+        <div role="navigation" id="sidebar" class="sidebar-offcanvas hide" data-component="sidenav">
+            <!-- list for the first level -->
+            <ul class="list-group te-left-nav" id="te-left-nav">
+                <!-- <li class="te-left-nav-icon">
+                        <em class="icon icon-tapneat2"></em>
+                    </li> -->
+                <li id="Homepage">
+                    <div id="homelink" class="nb">
+                        <em class="icon icon-nav-home"></em> <a
+                            class="list-group-item" href="#">Home</a>
+                    </div>
+                </li>
+                <li id="myOrderpage">
+                    <div id="orderlink" class="nb">
+                        <div class="icon-panel">
+                            <em class="icon icon-nav-order"></em>
+                        </div>
+                        <div>
+                            <a class="list-group-item" href="#">My Order</a>
+                        </div>
+                    </div>
+                </li>
+                <li id="Accountpage">
+                    <div class="nb" id="accountlink">
+                        <div class="icon-panel">
+                            <em class="icon icon-nav-account"></em>
+                        </div>
+                        <div>
+                            <a class="list-group-item" href="#">Account</a>
+                        </div>
+                    </div>
+                </li>
+                <li id="Invitepage">
+                    <div id="invitelink" class="nb">
+                        <div class="icon-panel">
+                            <em class="icon icon-nav-invite"></em>
+                        </div>
+                        <div>
+                            <a class="list-group-item" href="#">Invite</a>
+                        </div>
+                    </div>
+                </li>
+                <li id="Settingspage">
+                    <div id="settingslink" class="nb">
+                        <div class="icon-panel">
+                            <em class="icon icon-nav-settings"></em>
+                        </div>
+                        <div>
+                            <a class="list-group-item" href="#">Settings</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div id="signoutlink" class="nb">
+                        <div class="icon-panel">
+                            <em class="icon icon-nav-signout"></em>
+                        </div>
+                        <div>
+                            <a class="list-group-item" href="#">SignOut</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <!-- end of navigation bar -->
+</header>
+<!-- end of header section -->
+
+<main class="privacy-main">
+
+    <div id="privacy-page-content" class="">
+		<ol class="privacy-content">
+			<li>INTRODUCTION
+				<p>
+					This is the privacy and usage policy for www.tapandeat.com and our mobile application that we make available. The Site is operated and the Application is provided by Bitlime Tech Solutions Pvt. Ltd. For the purposes of Data Protection Act 1998 or Information Technology Act 2000, we are the data controller and hold your personal information.
+				</p>
+				<p>
+					When you visit or use our Service, we collect and store information about you, your computer or mobile device and your activities. We are committed to protecting your privacy online. We understand that your personal information you share with us shall not be distributed indiscriminately. We thus, would like to explain you how we collect information, what we do with it and what controls you have.
+				</p>
+				<p>
+					By using the Site or any Application, you consent to the collection and use of information in accordance with this privacy policy which we can and will modify unilaterally, from time to time by changing it on the Site or updating the relevant Application without prior notice or information. This privacy policy was last updated on August 21st 2014.
+				</p>				
+			</li>
+			
+			<li>INFORMATION WE COLLECT
+				<p>
+					The information we collect from you may include, but is not limited to:
+				</p>
+				<ol class="roman-style">
+					<li>
+						Your basic personal details:
+						<ul class="bullet-style">
+							<li>
+								Such as your name, email and/or postal address, telephone number, date of birth, gender that you provide by completing forms on the Site or Application, including if you register as a user of the Site or Application, upload or submit any material via the Site or Application, or request any information.
+							</li>
+							<li>
+								In connection with an account sign-in facility, your log-in and password details
+							</li>
+							<li>
+								If You access the Site or Application through a social networking profile, we may collect, store and use the details of that social networking profile and any information contained therein in order to populate any forms you might wish to complete on the Site or Application.
+							</li>
+						</ul>
+					</li>
+					
+					<li>
+						Details of any order(s) made to the Operator(s) of products and service or other transactions made by you through the Application.
+					</li>
+					
+					<li>
+						Any information or communication exchanged between you and Operator(s) about any orders you make for their products and services.
+					</li>
+					
+					<li>
+						Information or communication you send or share with us including events of reporting a problem or to submit queries, concerns or comments regarding the Site or its content.
+					</li>
+					
+					<li>
+						Information you share with us or the Operator under any form of surveys, promotions and competitions that we may run on Operator’s behalf or on our behalf, and if you choose to respond to, or participate in, them.
+					</li>
+					
+					<li>
+						Technical information from your mobile device (such as your IP address, push notification token, Operating System language Setting, the type of device and operating system of the device on which the Application is downloaded) relating to the service you receive.
+					</li>
+					
+					<li>
+						Information relating to your real time location.
+					</li>
+					
+					<li>
+						Information that you post in the form of reviews or comments or contributions to discussions.
+					</li>
+					
+					<li>
+						Your real time location to identify Operators in your location who uses our services and with whom you can place an Order, and also for other features like location services requested by you in order to allow check-in or tagging etc. If you do not allow us to collect your real time location data to provide location service requests, the Application will not work properly and you should in such a case uninstall the Application.
+					</li>
+					
+					<li>
+						We may also run referral programmes or similar initiatives, under which we ask you to, provide us with the contact details of your contacts who may find our products or services to be of interest, use those contact details for the purpose of the relevant initiatives only. By providing us with their details, you confirm that you have their permission to do so and you must not provide us with the details of anyone from whom you do not have such permission. We reserve the right to identify you as the person who made the referral in the referral message that is sent out.
+					</li>
+				</ol>
+				<p>You are under no obligation to provide any such information. However, if you should choose to withhold requested information, we may not be able to provide you with certain or any services.
+				</p>
+			</li>
+			
+			<li>
+				USE OF PERSONAL INFORMATION
+				<p>We may use your personal information that you provide us with your consent for following purpose:</p>
+				<ol class="roman-style">
+					<li>
+						
+							Identify you when you log-in to your account.
+						
+					</li>
+					
+					<li>
+						
+							Provide the Operator with your Order details and other information required to provide you with the services and information which you request and are offered through the application.
+						
+					</li>
+					
+					<li>
+						
+							Maintain and run your account with us.
+						
+					</li>
+					
+					<li>
+						
+							Verify and carry out financial transactions in relation to payments you make online.
+					
+					</li>
+					
+					<li>
+						
+							Use the relevant data related to users and orders placed etc, for analytics purpose in order to improve and enhance our services including research into our users’ demographics and tracking of sales data.
+						
+					</li>
+					
+					<li>
+						
+							We also use the contact details provided by you in order to send you information we have identified as of being useful to you or which you have requested from us, including receipt of marketing communications such as our updates and blog posts, offers from Operators/Third party directly which you may find useful regarding their products and services. 
+						<br/>
+						
+							However, You can choose not to be contacted further about information regarding our products and services or those of our Operators or third parties, or to share your details with our Operators/Third party so that they can send you information regarding their products and services. You can do so by either not accepting to terms for such data use at the point when you are asked to share such information, or by opting out of participating in any such process that ask you for such information, or by unsubscribing to our mailers, or even by closing your account with us. In case of any issues faced by You in order to stop being contacted by us or our Operators/Third party, You could write/contact us at medium mentioned under Contact Us.
+						
+					</li>
+				</ol>
+			</li>
+			
+			<li>
+				UNINSTALL/ UNSUBSCRIBE
+				<p>
+					You can choose to stop all information collected by Bitlime Tech Solutions Pvt. Ltd. via Tap&Eat application by uninstalling the Application. You may use the standard uninstall processes as may be available as part of you mobile device or via the Application market place network.
+				</p>
+			</li>
+			
+			<li>
+				COOKIES, GOOGLE ANALYTICS AND SIMILAR TECHNOLOGY
+				<p>
+					The Site and Applications also uses cookies or similar technology to collect information about your access to the Site or access or use of any Application.
+				</p>
+				<p>
+					Cookies are small text that include a unique reference code that a website transfers to your device to store and sometimes track information about you. They are widely used to remember that you have used the Site or Application before, allowing you to navigate the Site more quickly and easily, remember your login session, store your preferences and customise your Site/Application experience and also to collect statistical information site/Application usage.
+				</p>
+				<p>
+					We also use Google Analytics, a web analytics service provided by Google, Inc. ("Google") which in turn uses "cookies". Google will use this information for the purpose of evaluating your use of the website, compiling reports on website activity for website operators and providing other services relating to website activity and internet usage.
+				</p>
+				<p>
+					Most computer and some mobile web browsers automatically accept cookies but, if you prefer, you can change your browser to prevent that or to notify you each time a cookie is set. Please note however, that by blocking or deleting cookies you may not be able to take full advantage of the Site or Applications (as the case may be). To find out more about cookies, including how to see what cookies have been set and how to manage and delete them, visit www.allaboutcookies.org.
+				</p>
+			</li>
+			
+			<li>
+				ANALYTICS AND STATISTICS USAGE
+				<p>
+					The various information we mentioned that we collect, is also used by us for maintaining and generating various statistics and analytical reports for the purpose of our business and marketing needs as well as that of our Operators’, partners, advertisers, sponsors and other third parties involved. However such information is strictly converted into statistics and figures and will not include any personally identifiable information.
+				</p>
+				<p>
+					We may however share your personal information with any of our partners, Operators, or to our agents or contractors who assist us in providing the services we offer through the Site or the Application, processing transactions, fulfilling requests for information, receiving and sending communications, updating marketing lists, analysing data, providing support services or in other tasks from time to time. Our agents and contractors will only use your information to the extent necessary to perform their functions.
+				</p>
+			</li>
+			
+			<li>
+				EXTERNAL LINKS
+				<p>
+					Under any promotions/offers or interactive messages conveyed through our Site/Application or on any other platform by us, there may be links to Operators’ sites or any other external sites. We are not responsible for the privacy policies or the content of such sites.
+				</p>
+			</li>
+			
+			<li>
+				PAYMENT PROCESSING
+				<p>
+					Payments made on our Site or Application are made through our payment gateway partners Citrus Payment Solutions Private Limited. The details of the credit or debit card you share will be shared directly to CitrusPay which operates a secure server to process payment details, encrypting your credit/debit card information and authorising payment. Information which you supply to CitrusPay is not within our control and is subject to CitrusPay’s own privacy policy and terms and conditions.
+				</p>
+			</li>
+			
+			<li>
+				SECURITY
+				<p>
+					We emphasise and believe in the importance of the security of all personal and other data you share with us. We have our best security measures in place to attempt to protect your information against any loss or misuse under our control. Though, you should bear in mind that submission of information over the internet is never entirely secure and thus we cannot ensure or guarantee any loss or misuse of information, but we use all reasonable efforts to prevent it.
+				</p>
+			</li>
+			
+			<li>
+				YOUR RIGHTS
+				<p>
+					As mentioned above, you have a right to prevent the use of your personal information or even close your account with us at any point of time.
+				</p>
+			</li>
+			
+			<li>
+				CONTACT US
+				<p>
+					Please submit any questions, concerns or comments you have about this privacy policy or any requests concerning your personal data by email to support@tapandeat.com. 
+				</p>
+			</li>
+		
+		</ol>
+	</div>
+
+
+</main>
+<!-- start of script declarations -->
+        <script src="js/jquery-1.11.0.min.js"></script>  
+        <script src="js/jquery.touchswipe.js"></script>
+        <script src="js/privacy.js"></script>     
+        <script src="js/navigation.js"></script>
+        <script src="js/corefunctions.js"></script>
+<!-- end of script declarations -->
+</body>
+</html>

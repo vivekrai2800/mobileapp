@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Tap &amp; Eat</title>
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- start of css files declarations -->
+<link rel="stylesheet" type="text/css" href="css/common.css">
+<link rel="stylesheet" type="text/css" href="css/menu.css">
+<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<!-- start of css files declarations -->
+
+<!-- Start of Js decl.... -->
+     <script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>
+    <script src="js/jquery.touchswipe.js"></script> 
+    <script src="js/signup.js"></script>
+    <script src="js/corefunctions.js"></script> 
+    <script type="text/javascript" charset="utf-8" src="cordova.js"></script>   
+<!-- End of Js decl..-->
+
+
+</head>
+<body>
+    <!-- Header -->
+    <header class="mp-header">
+        <section class="header-data">
+            <section class="header-section">
+                <div class="mp-header-left left" id="backButton">
+                    <em class="icon icon-left" id="btn-go-back"></em>
+                </div>
+
+                <div class="mp-main-center">
+                    <div class="menuCenter">
+                        <span class="mp-main-menu">Verification</span>                        
+                    </div>
+                </div>
+              
+            </section>
+        </section>  
+       
+    </header>
+    <!-- /Header -->  
+    
+    <div class="verification-container dynamic-form">
+	    <div class="input">
+		    <p>Enter code below</p>
+		    <input name="token" type="text"/>
+	    </div> 
+	    <div class="button">
+	       <button id="verify_phone_number">Enter</button>
+	    </div>  
+	    <div class="resend">
+	       <p>If you do not receive your access code within 60 seconds,<a> check your email</a> or <a id="genrate_Verification_Code">  click here </a>.</p>
+	    </div> 
+    </div>
+</body>
+</html> 

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Tap &amp; Eat</title>
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=true">
+
+<!-- start of css files declarations -->
+<link rel="stylesheet" type="text/css" href="css/common.css">
+<link rel="stylesheet" type="text/css" href="css/menu.css">
+<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<script type="text/javascript" src="cordova.js"></script>
+<script src="http://debug.build.phonegap.com/target/target-script-min.js#6afed568-cfd0-11e3-9e79-12313d16b935"></script>
+<!-- start of css files declarations -->
+
+</head>
+<!--[if lt IE 9]>
+            <script src="js/html5.js"></script>
+            <script src="js/css3-mediaqueries.js"></script>
+        <![endif]-->
+<body>
+
+    <!-- start of header section -->
+    <header class="mp-header">
+        <section class="header-data">
+            <section class="header-section">
+                <div class="mp-header-left1 left" id="backButton">
+                    <em class="icon icon-left" id="btn-go-back"></em>
+                </div>
+
+                <div class="mp-main-center">
+                    <div class="menuCenter">
+                        <em class="icon icon-tapeat"></em> <span class="mp-main-menu">Review Order</span>
+                    </div>
+                </div>
+
+                <div class="right">
+                    <i class="fa fa-trash-o remove-order"></i>
+                    <em class="icon icon-nav navigate" id="btn-nav-bar"></em>
+                </div>
+            </section>
+        </section>
+
+        </section>
+
+        <!-- navigation bar - would be later moved to a different file -->
+        <div role="navigation" id="sidebar" class="sidebar-offcanvas hide"
+            data-component="sidenav">
+            <!-- list for the first level -->
+            <ul class="list-group te-left-nav" id="te-left-nav">
+                <!-- <li class="te-left-nav-icon">
+                        <em class="icon icon-tapneat2"></em>
+                    </li> -->
+                <li id="Homepage">
+                    <div id="homelink" class="nb">
+                        <em class="icon icon-nav-home"></em> 
+                        <a class="list-group-item " href="#">Home</a>
+                    </div>
+                </li>
+                <li id="myOrderpage">
+                    <div id="orderlink" class="nb">
+                        <div class="icon-panel">
+                            <em class="icon icon-nav-order"></em>
+                        </div>
+                        <div>
+                            <a class="list-group-item" href="#">My Order</a>
+                        </div>
+                    </div>
+                </li>
+                <li id="Accountpage">
+                    <div class="nb" id="accountlink">
+                        <div class="icon-panel">
+                            <em class="icon icon-nav-account"></em>
+                        </div>
+                        <div>
+                            <a class="list-group-item" href="#">Account</a>
+                        </div>
+                    </div>
+                </li>
+                <li id="Invitepage">
+                    <div id="invitelink" class="nb">
+                        <div class="icon-panel">
+                            <em class="icon icon-nav-invite"></em>
+                        </div>
+                        <div>
+                            <a class="list-group-item" href="#">Invite</a>
+                        </div>
+                    </div>
+                </li>
+                <li id="Settingspage">
+                    <div id="settingslink" class="nb">
+                        <div class="icon-panel">
+                            <em class="icon icon-nav-settings"></em>
+                        </div>
+                        <div>
+                            <a class="list-group-item" href="#">Settings</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="nb">
+                        <div class="icon-panel">
+                            <em class="icon icon-nav-signout"></em>
+                        </div>
+                        <div>
+                            <a class="list-group-item" href="#">SignOut</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div> 
+    </header>
+    
+    <div class="yourorder-container">
+    
+	    <div class="branding">
+	     <div class="logo"><img src="images/menu/sample-rest-logo.png" /></div>
+	     <div class="details">
+	       <p class="name">WOH Restaurant </p>
+	       <p class="type"><span>Bar</span>, <span>New Delhi</span></p>
+	     </div>
+	    </div>
+	    
+	    <div class="order-collection">
+	    <table class="ro-main-content-dish-list">
+		    
+	    </table>
+	    </div>    
+		
+	    <div class="billing">
+	       <table>
+	           <tr>
+	           <td><span>Sub Total</span></td>
+	           <td></td>
+	           <td class="cost"><i class="fa fa-inr"></i><span id="subTotalId"></span></td>
+	           </tr>
+	           
+	           <tr>
+               <td><span>Service Tax@</span><span>12%</span></td>
+               <td></td>
+               <td class="cost"><i class="fa fa-inr"></i><span id="serviceTaxId"></span></td>
+               </tr>
+               
+               <tr>
+               <td><span>Service Charge@</span><span>2%</span></td>
+               <td></td>
+               <td class="cost"><i class="fa fa-inr"></i><span class="ServCharge" id="serviceChargeId"></span></td>
+               </tr>
+               
+               <tr>
+               <td><span>VAT@</span><span>2%</span></td>
+               <td></td>
+               <td class="cost"><i class="fa fa-inr"></i><span id="vatId"></span></td>
+               </tr>
+               
+               <tr>
+               <td><span>VAT alcohal@</span><span>20%</span></td>
+               <td></td>
+               <td class="cost"><i class="fa fa-inr"></i><span class="vat-alcohol"></span></td>
+               </tr>
+                              
+	       </table>
+	    </div>
+	    
+	    <div class="total">
+	     <table>
+               <tr>
+               <td><span>Total</span></td>
+               <td></td>
+               <td class="cost"><i class="fa fa-inr"></i><span class="tot-amt" id="totalAmountId"></span></td>
+               </tr>
+        </table>	    
+	    </div>
+	    
+	    <div class="pay-btns">
+	       <a class="waiter" id="pay-waiter">Pay to Waiter</a>
+	       <a class="mobile" id="btn-payment-pay-now">Pay via Mobile</a>	    
+	    </div>
+	    
+	    <div class="addmore-btn">
+	       <a class="add">+ Add more Items</a>
+	    </div>
+    </div>
+
+	    <!-- start of script declarations -->
+        <script src="js/jquery-1.11.0.min.js"></script>  
+        <script src="js/jquery.touchswipe.js"></script>
+        <script src="js/corefunctions.js"></script>
+		<script src="js/navigation.js"></script>
+        <script src="js/payment.js"></script>	
+		<script src="js/menu.js"></script>	
+		<script type="text/javascript" src="js/yourorder.js"></script>
+    	
+		<!-- end of script declarations -->
+
+
+
+
+</body>
+</html>

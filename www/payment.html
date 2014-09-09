@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <meta charset="utf-8">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>Tap &amp; Eat</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=true">
+
+    <!-- start of css files declarations -->
+      
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+        <!--  <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.css"> -->
+        <link rel="stylesheet" type="text/css" href="css/common.css">
+        <link rel="stylesheet" type="text/css" href="css/menu.css">
+        <link rel="stylesheet" type="text/css" href="css/payment.css">
+		
+<!-- start of js file declarations -->
+		<script type="text/javascript" src="cordova.js"></script>
+<!-- end of js file declarations -->
+        
+
+<!-- start of css files declarations -->
+
+</head>
+    	<!--[if lt IE 9]>
+			<script src="js/html5.js"></script>
+			<script src="js/css3-mediaqueries.js"></script>
+		<![endif]-->
+<body>
+    <!-- start of header section -->
+<div id="wrap">
+<header class="mp-header">
+    <section class="header-data">
+        <section class="mb">
+                <div class="mp-header-left left">
+                    <em class="icon icon-left" id="btn-go-back" ></em>
+                </div>
+
+                <div class="mp-main-center">
+                    <div class="menuCenter">
+						<em class="icon icon-tapeat"></em>
+						<span class="mp-main-menu">Payment</span>
+					</div>
+                </div>
+
+                <div class="right">
+                    <em class="icon icon-nav navigate" id="nav-bar"></em>
+                </div>
+        </section>
+    </section>
+
+    <!-- navigation bar - would be later moved to a different file -->
+    <div role="navigation" id="sidebar"  class="sidebar-offcanvas hide" data-component="sidenav">
+                <!-- list for the first level -->
+                <ul class="list-group te-left-nav" id="te-left-nav" >
+                    <!-- <li class="te-left-nav-icon">
+                        <em class="icon icon-tapneat2"></em>
+                    </li> -->
+            <li id="Homepage">
+                <div id="homelink" class="nb">
+					<em class="icon icon-nav-home"></em>
+					<a class="list-group-item" href="#">Home</a>
+                </div>             
+            </li> 
+             <li id="myOrderpage">
+				<div id="orderlink" class="nb">
+					<div class="icon-panel"><em class="icon icon-nav-order"></em></div>
+					<div><a class="list-group-item" href="#">My Order</a></div>
+				</div>
+            </li>
+            <li id="Accountpage">
+				<div class="nb">
+					<div class="icon-panel"><em class="icon icon-nav-account"></em></div>
+					<div><a class="list-group-item" href="#">Account</a></div>
+				</div>
+            </li>
+            <li id="Invitepage">
+                <div id ="invitelink" class="nb">
+					<div class="icon-panel"><em class="icon icon-nav-invite"></em></div>
+					<div><a class="list-group-item" href="#">Invite</a></div>
+                </div>
+            </li>
+            <li id="Settingspage">
+                <div id="settingslink" class="nb">
+					<div class="icon-panel"><em class="icon icon-nav-settings"></em></div>
+					<div><a class="list-group-item" href="#">Settings</a></div>
+                </div>
+            </li>
+            <li>
+				<div class="nb extend">
+					<div class="icon-panel"><em class="icon icon-nav-signout"></em></div>
+					<div><a class="list-group-item" href="#">SignOut</a></div>
+				</div>
+            </li>
+                </ul>
+    </div>
+    <!-- end of navigation bar -->
+
+</header>
+<!-- end of header section -->
+
+<!-- start of main content for the payment page -->
+<main class="pm-main">
+    <section class="main-data">
+        <section class="mb">
+            <button class="btn-golden" id="pay-waiter">
+                Pay to waiter by cash or card
+            </button>
+        </section>
+        <section class="mb">
+            
+            <div class="pm-payment-buttons">
+                <button class="btn-red" id="btn-payment-cancel">Cancel</button>
+                <button class="btn-green" type="submit" id="btn-payment-pay-now">Pay Now</button> 
+            </div> 
+        </section>
+    </section>
+</main>
+
+<footer class="menu-footer">
+    <section class="footer-data">
+        <ul class="footer-items-list">
+            <li class="footer-item" id="btnAskWaiter">
+                <em class="icon icon-ask-waiter"></em>
+                <span>ask for waiter</span>
+            </li>
+
+            <li class="footer-item" id="btnReviewOrder">
+                <em class="icon icon-review-order"></em>
+                <span>review order</span>
+            </li>
+        </ul>
+    </section>
+</footer>
+<!-- end of main content for the payment page -->
+
+<!-- start of script declarations -->
+        <script src="js/jquery-1.11.0.min.js"></script>  
+        <script src="js/jquery.touchswipe.js"></script>
+        <script src="js/bootstrap.js"></script>
+        <script src="js/corefunctions.js"></script>
+		<script src="js/navigation.js"></script>
+        <script src="js/payment.js"></script>		
+<!-- end of script declarations -->
+</body>
+</html>

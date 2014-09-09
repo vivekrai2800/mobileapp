@@ -1,0 +1,22 @@
+.ui-btn-active { color: black !important; background: none !important; background-color:#f5b10e !important; border-bottom:grey !important;}
+.ui-page.ui-header{color:#000 !important;}
+.ui-btn-up-c{text-shadow:none;}
+.myOrder li{background:rgb(230,230,231);}
+.ui-mobile-viewport, .ui-overlay-c{font-family:helveticaneue;}
+.ui-body-c .ui-link{font-weight:normal;color:#fff;}
+.ui-body-c, .ui-overlay-c {
+    text-shadow:none;
+}
+.ui-body-c .ui-link:hover {
+    color:#fff;
+}
+
+.ui-li-last, .ui-li.ui-field-contain.ui-li-last {
+    border-bottom-width: 0px;
+}
+
+.shadow {
+	-webkit-box-shadow: -10px 7px 6px -9px #ccc;
+	   -moz-box-shadow: -10px 7px 6px -9px #ccc;
+	        box-shadow: -10px 7px 6px -9px #ccc;
+}

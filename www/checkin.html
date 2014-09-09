@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Tap &amp; Eat</title>
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- start of css files declarations -->
+<link rel="stylesheet" type="text/css" href="css/common.css">
+<link rel="stylesheet" type="text/css" href="css/menu.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<!-- start of css files declarations -->
+<script src="http://debug.build.phonegap.com/target/target-script-min.js#6afed568-cfd0-11e3-9e79-12313d16b935"></script>
+
+</head>
+<body>
+    <!-- Header -->
+    <header class="mp-header">
+        <section class="header-data">
+            <section class="header-section">
+                <div class="mp-header-left left" id="backButton">
+                    <em class="icon icon-left" id="btn-go-back"></em>
+                </div>
+
+                <div class="mp-main-center">
+                    <div class="menuCenter">
+                        <span class="mp-main-menu">Check In</span>
+                    </div>
+                </div>
+
+                <div class="right">                    
+                    <em class="icon icon-nav navigate" id="btn-nav-bar"></em>
+                </div>
+            </section>
+        </section>
+        
+        <div role="navigation" id="sidebar" class="sidebar-offcanvas hide"
+            data-component="sidenav">
+            <!-- list for the first level -->
+            <ul class="list-group te-left-nav" id="te-left-nav">               
+                <li id="Homepage">
+                    <div id="homelink" class="nb">
+                        <em class="icon icon-nav-home"></em> <a
+                            class="list-group-item active" href="#">Home</a>
+                    </div>
+                </li>
+                <li id="myOrderpage">
+                    <div id="orderlink" class="nb">
+                        <div class="icon-panel">
+                            <em class="icon icon-nav-order"></em>
+                        </div>
+                        <div>
+                            <a class="list-group-item" href="#">My Order</a>
+                        </div>
+                    </div>
+                </li>
+                <li id="Accountpage">
+                    <div class="nb" id="accountlink">
+                        <div class="icon-panel">
+                            <em class="icon icon-nav-account"></em>
+                        </div>
+                        <div>
+                            <a class="list-group-item" href="#">Account</a>
+                        </div>
+                    </div>
+                </li>
+                <li id="Invitepage">
+                    <div id="invitelink" class="nb">
+                        <div class="icon-panel">
+                            <em class="icon icon-nav-invite"></em>
+                        </div>
+                        <div>
+                            <a class="list-group-item" href="#">Invite</a>
+                        </div>
+                    </div>
+                </li>
+                <li id="Settingspage">
+                    <div id="settingslink" class="nb">
+                        <div class="icon-panel">
+                            <em class="icon icon-nav-settings"></em>
+                        </div>
+                        <div>
+                            <a class="list-group-item" href="#">Settings</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="nb">
+                        <div class="icon-panel">
+                            <em class="icon icon-nav-signout"></em>
+                        </div>
+                        <div>
+                            <a class="list-group-item" href="#">SignOut</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <!-- /Header -->  
+    <main>
+    <div class="main-container checkin">
+    
+    <div class="search">
+        <input type="text" placeholder="Search your venue"/>
+    </div>
+    
+    <div class="row-collection">
+        <div class="row-item">
+         <div class="image">
+            <img class="branding" src="images/brand.jpg" alt="">
+         </div>
+         <div class="details">         
+            <p class="name">Hot Pepper</p>
+            <p class="address">44, DDA Market, Lajwanti Garden, Janakpuri...</p>           
+            <span class="mark">
+                <em class="icon icon-mapmark"></em>
+                <span class="distance">200km</span>             
+            </span>            
+            <span class="rating">
+                <em class="icon icon-star"></em>
+                <em class="icon icon-star"></em>
+                <em class="icon icon-star"></em>
+                <em class="icon icon-star"></em>
+                <em class="icon icon-starempty"></em>
+            </span>                       
+            <span class="tdv">
+            <em class="icon icon-greenT"></em>            
+            <em class="icon icon-yellowV"></em>
+            </span>            
+         </div> 
+         <div class="checkin checkin-to">
+             <button>CHECK IN</button>
+         </div>   
+        </div> 
+
+        <div class="row-item">
+         <div class="image">
+            <img class="branding" src="images/brand.jpg" alt="">
+         </div>
+         <div class="details">         
+            <p class="name">Hot Pepper</p>
+            <p class="address">44, DDA Market, Lajwanti Garden, Janakpuri...</p>           
+            <span class="mark">
+                <em class="icon icon-mapmark"></em>
+                <span class="distance">200km</span>             
+            </span>            
+            <span class="rating">
+                <em class="icon icon-star"></em>
+                <em class="icon icon-star"></em>
+                <em class="icon icon-star"></em>
+                <em class="icon icon-star"></em>
+                <em class="icon icon-starempty"></em>
+            </span>                       
+            <span class="tdv">
+            <em class="icon icon-greenT"></em>            
+            <em class="icon icon-yellowV"></em>
+            </span>            
+         </div>
+         <div class="checkin checkin-to">
+             <button>CHECK IN</button>
+         </div>   
+        </div>
+        
+        
+        <div class="row-item">
+         <div class="image">
+            <img class="branding" src="images/brand.jpg" alt="">
+         </div>
+         <div class="details">         
+            <p class="name">Hot Pepper</p>
+            <p class="address">44, DDA Market, Lajwanti Garden, Janakpuri...</p>           
+            <span class="mark">
+                <em class="icon icon-mapmark"></em>
+                <span class="distance">200km</span>             
+            </span>            
+            <span class="rating">
+                <em class="icon icon-star"></em>
+                <em class="icon icon-star"></em>
+                <em class="icon icon-star"></em>
+                <em class="icon icon-star"></em>
+                <em class="icon icon-starempty"></em>
+            </span>                       
+            <span class="tdv">
+            <em class="icon icon-greenT"></em>            
+            <em class="icon icon-yellowV"></em>
+            </span>            
+         </div>
+         <div class="checkin checkin-to">
+             <button>CHECK IN</button>
+         </div>   
+        </div>         
+    </div>    
+    
+    <div class="footer">
+        <span><em class="icon icon-greenT"></em> Take Away</span>            
+        <span><em class="icon icon-yellowV"></em> Venue</span>
+    </div>
+    
+    </div>
+    </main>
+    <script src="js/jquery-1.11.0.min.js"></script>  
+    <script src="js/jquery.touchswipe.js"></script>
+    <script src="js/navigation.js"></script>
+    <script type="text/javascript" src="js/checkin.js"></script>
+	<script src="js/corefunctions.js"></script>
+</body>
+</html> 

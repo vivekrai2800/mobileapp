@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Tap &amp; Eat</title>
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- start of css files declarations -->
+<link rel="stylesheet" type="text/css" href="css/common.css">
+<link rel="stylesheet" type="text/css" href="css/menu.css">
+<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<!-- start of css files declarations -->
+<script src="http://debug.build.phonegap.com/target/target-script-min.js#6afed568-cfd0-11e3-9e79-12313d16b935"></script>
+
+</head>
+<body>
+    <!-- Header -->
+    <header class="mp-header">
+        <section class="header-data">
+            <section class="header-section">
+                <div class="mp-header-left left" id="backButton">
+                    <em class="icon icon-left" id="btn-go-back"></em>
+                </div>
+
+                <div class="mp-main-center">
+                    <div class="menuCenter">
+                        <span class="mp-main-menu">Restaurant Name</span>                        
+                    </div>
+                </div>
+
+                <div class="right">                    
+                    <em class="icon icon-nav navigate" id="btn-nav-bar"></em>
+                </div>
+            </section>
+        </section>
+        
+        <div role="navigation" id="sidebar" class="sidebar-offcanvas hide"
+            data-component="sidenav">
+            <!-- list for the first level -->
+            <ul class="list-group te-left-nav" id="te-left-nav">               
+                <li id="Homepage">
+                    <div id="homelink" class="nb">
+                        <em class="icon icon-nav-home"></em> <a
+                            class="list-group-item active" href="#">Home</a>
+                    </div>
+                </li>
+                <li id="myOrderpage">
+                    <div class="nb" id="orderlink">
+                        <div class="icon-panel">
+                            <em class="icon icon-nav-order"></em>
+                        </div>
+                        <div>
+                            <a class="list-group-item" href="#">My Order</a>
+                        </div>
+                    </div>
+                </li>
+                <li id="Accountpage">
+                    <div class="nb" id="accountlink">
+                        <div class="icon-panel">
+                            <em class="icon icon-nav-account"></em>
+                        </div>
+                        <div>
+                            <a class="list-group-item" href="#">Account</a>
+                        </div>
+                    </div>
+                </li>
+                <li id="Invitepage">
+                    <div id="invitelink" class="nb">
+                        <div class="icon-panel">
+                            <em class="icon icon-nav-invite"></em>
+                        </div>
+                        <div>
+                            <a class="list-group-item" href="#">Invite</a>
+                        </div>
+                    </div>
+                </li>
+                <li id="Settingspage">
+                    <div id="settingslink" class="nb">
+                        <div class="icon-panel">
+                            <em class="icon icon-nav-settings"></em>
+                        </div>
+                        <div>
+                            <a class="list-group-item" href="#">Settings</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="nb">
+                        <div class="icon-panel">
+                            <em class="icon icon-nav-signout"></em>
+                        </div>
+                        <div>
+                            <a class="list-group-item" href="#">SignOut</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <!-- /Header -->  
+    
+ <main>   
+    <div class="rest-info-container">	    
+	    <div class="map-tracking">
+	
+         <div id="map-canvas">  </div>
+    
+         </div>
+	    
+	    <div class="section actions">
+	       <ul>
+	       <li><em class="icon icon-direction"></em><p>DIRECTION</p></li>
+	       <li><em class="icon icon-fav"></em><p>FAVOURITE</p></li>
+	       <li class="photos"><em class="icon icon-muff"></em><p>PHOTOS</p></li>	       
+	       </ul>  
+	       
+	       <div class="checkin checkin-rest"><p>CHECKIN</p></div>     
+	    </div>
+	    
+	    <div class="section more-info">
+	       <em class="icon icon-phone"></em>	
+	       
+	       <div class="contact">
+	       <p>+91 9871757744</p>
+	       <p>+91 9871757744</p>	      
+	       </div> 
+	       
+	       <div class="food">
+	       <p class="veg"><i class="fa fa-circle"></i><span>Veg</span></p>
+	       <p class="nonveg"><i class="fa fa-circle"></i><span>Non-Veg</span> </p>
+	       </div>     
+	    </div>
+	    
+	    <div class="section description">
+		    <div class="heading">
+		    <p>Description</p>
+		    </div>	    
+		    <div class="info">
+		      <p class="about">Kylin Premier is your typical oriental restaurant with a lukewarm menu and decent staff</p>
+		    </div>
+	    </div>
+	    
+	    <div class="section share">
+	        <div class="heading">
+	        <p>Share</p>
+	        </div>      
+	        <div class="info">
+	          <div class="social-icon">
+	            <i class="fa fa-facebook"></i>
+	            <i class="fa fa-twitter"></i>
+	            <!-- <i class="fa fa-linkedin"></i> -->
+	            <i class="fa fa-google-plus"></i>
+	            <!-- <i class="fa fa-instagram"></i> -->
+	            <i class="fa fa-envelope"></i>
+	          </div>
+	          <div class="see-web">
+	           <button><span>SEE WEBSITE</span><i class="fa fa-arrow-circle-o-right"></i></button>
+	          </div>
+	        </div>           
+	    </div>
+	    
+	    <div class="section address">
+	        <div class="heading">
+	            <p>Address</p>
+	        </div>        
+	        <div class="info">
+		        <p class="complete-address">T 302, 3rd Floor, Ambience Mall, Vasant Kunj, New Delhi</p>
+		        <p class="howfar">
+		        <span>Distance: </span>
+		        <span class="distance">(1km)</span>
+		        </p>
+	        </div>    
+	    </div>
+	    
+	    <div class="section timing">
+	        <div class="heading">
+	            <p>Timing</p>
+	        </div>        
+	        <div class="info">
+	            <p class="rest-timings">
+	             <span class="opens">12 Noon</span>
+		         <span>to</span>
+		         <span class="close">12:30 AM</span>
+	            </p>
+	            <p class="happyhours">
+		         <span>Happy Hours: </span>
+		         <span class="starts">4 PM</span>
+		         <span>to</span>
+		         <span class="ends">6:30 PM</span>
+		         <span class="from">(Mon - Fri)</span>
+	            </p>
+	            
+	            <p class="status">
+	            <span>Open Now</span>
+	            </p>
+	        </div>    
+	    </div>    
+    </div>
+ </main>   
+        <script src="js/jquery-1.11.0.min.js"></script>  
+        <script src="js/jquery.touchswipe.js"></script>     
+        <script src="js/corefunctions.js"></script>     
+        <script src="js/menu.js"></script>
+        <script src="js/navigation.js"></script>
+        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDae_f5Wi0prHCLvLb25ZO1dNft4fc62rM"> </script>
+        <script src="js/locationPage.js"></script>
+		 <script src="js/restinfo.js"></script>
+</body>
+</html> 
