@@ -1,7 +1,0 @@
-/* css for main content */
-.row{display:block;width:100%;overflow:hidden;}
-.left-circle{width:50%;display:inline-block;float:left;position:relative;}
-.right-circle{width:50%;display:inline-block;float:left;position:relative;}
-.align-center{margin:0 auto;display:block; margin: auto;position: absolute;top: 0; left: 0; bottom: 0; right: 0;}
-.left-icon,.right-icon{position:absolute;left: 30px;top: 22px;}
-.desc-text{position:absolute;color:#fff;font-size:0.65em;font-style:normal;text-align:center;top: 66px;width: 97px;}

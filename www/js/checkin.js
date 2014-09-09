@@ -1,9 +1,0 @@
-$('.checkin-to').on('touchend',function(){
-    localStorage.setItem('restaurantId','8');
-    clearOrderDetails();
-    window.location.href="menupage.html"});
-$('.details').on('touchend',function(){
-    localStorage.setItem('restaurantId','8');
-    clearOrderDetails();
-    window.location.href="restinfo.html"}
-);
